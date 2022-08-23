@@ -17,8 +17,9 @@
 - Buttons to not click too many times (cause its broken :unamused:)
 
 ## :sob: Lessons learnt
-![alt text](https://3os.org/assets/images/markdown-cheatsheet/minion.png)
 ![minion][internal-source]{: style="width:200px"}
+
+[internal-source]: /assets/images/markdown-cheatsheet/minion.png 'Title of the image'
 
 What I would do differently if I could wind back the clock...
 
