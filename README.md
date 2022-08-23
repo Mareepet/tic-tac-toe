@@ -16,13 +16,10 @@
 - Anything a LOT broken
 - Buttons to not click too many times (cause its broken :unamused:)
 
-## :sob: Lessons learnt
-![minion][internal-source]{: style="width:200px"}
+## Lessons learnt
 
-[internal-source]: /assets/images/markdown-cheatsheet/minion.png 'Title of the image'
 
-What I would do differently if I could wind back the clock...
-
+![alt text](https://industryforum.co.uk/wp-content/uploads/sites/6/2015/09/Seek-capture-act-upon.jpg)
 
 ## :white_check_mark: Future features
 Cool things I would add if I can keep working on this
