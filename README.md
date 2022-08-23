@@ -18,6 +18,8 @@
 
 ## :sob: Lessons learnt
 ![alt text](https://3os.org/assets/images/markdown-cheatsheet/minion.png)
+![minion][internal-source]{: style="width:200px"}
+
 What I would do differently if I could wind back the clock...
 
 
