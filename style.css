@@ -1,0 +1,126 @@
+body {
+    background-color: rgb(52, 79, 127);
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    color: orangered;
+    font: bold 52px Helvetica, Arial, Sans-Serif;
+    text-shadow: 2px 2px 3px black, 
+                2px 2px 3px black;
+}
+                   
+.board {
+      margin-top: -20px;
+        /* height: 100%; */
+        width: 100%;
+        display: grid; 
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, auto)
+        
+    }
+    .img {
+       /* justify-content: center; */
+    margin-left: 25px;
+      
+    } 
+
+.cell {
+    
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    
+}
+
+/* .cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3) {
+    border-top: none;
+}
+.cell:nth-child(1), .cell:nth-child(4), .cell:nth-child(7) {
+    border-left: none;
+}
+.cell:nth-child(3), .cell:nth-child(6), .cell:nth-child(9) {
+    border-right: none;
+}
+.cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9) {
+    border-bottom: none;
+} */
+.game-End {
+    width: 40%;
+    height: 60vh;
+    margin-left: 30%; 
+    background: rgb(181, 212, 212,0.5);
+    position: fixed;
+    border-radius: 14px;
+    backdrop-filter: blur(.1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+.reset {
+   /* margin-top: -10%; */
+    border: none;
+    font-size: 18px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: 200px;
+    background-color: rgb(213, 83, 18);
+    cursor: pointer;
+    transition: all 0.3s;
+     /* display: flex; */
+     /* margin-left: -21%;  */
+     /* margin-left: 47%; */
+
+}
+.reset:hover {
+ font-size: 20px;
+}
+.result {
+    padding: 50px;
+    font-size: 50px;
+    text-align: center;
+    animation: colorFade 10s infinite;
+}
+@keyframes colorFade {
+    10% {
+        filter:  drop-shadow(6px 6px rgb(38, 217, 38));
+        /* color: black; */
+    }20%{
+        filter:  drop-shadow(6px 6px 6px rgb(138, 6, 6));
+        /* color: red; */
+    }
+    40%{
+        filter:  drop-shadow(6px 6px 6px rgb(211, 211, 62));
+        /* color:   yellow; */
+    }
+    60%{
+        filter:  drop-shadow(6px 6px 6px purple);
+        /* color: purple; */
+    }
+    80%{
+        filter:  drop-shadow(6px 6px 6px rgb(33, 33, 192));
+        /* color: red; */
+    }
+    100%{
+        filter:  drop-shadow(6px 6px 6px green);
+        /* color: red; */
+    }
+
+}
