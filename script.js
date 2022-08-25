@@ -14,13 +14,14 @@
      reset.addEventListener('click',resetGame);  
     //   reset = false;
     // function startGame(boxes) {
+        
     var boxes = document.querySelector('.board')
     // var boxes = document.querySelector('.c1')
     // for (let i=0; i< cell.length; i++) {
     var cell = document.querySelectorAll('.cell')
     console.log(cell)
-    // function startGame(boxes) {
-       
+    
+    // function startGame() {
     boxes.addEventListener('click',function(event) { 
     // if (boxes.children.innerText != '')return;
     let box = event.target 
@@ -207,11 +208,13 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O'
     if (counter == 9) {
        result.textContent = "OhOO! IT'S A TIE "
        gameOver.style.display ='flex' 
+    //    if(boxes.children.innerText==='string'){
+    //    resetGame();
+    //    }
     }   
     
 } ) 
-    // }
-    // startGame() ;   
+    
      function resetGame() {   
      gameOver.style.display = "";
      boxes.children[0].innerText ='', boxes.children[0].style.backgroundColor = '';
@@ -223,11 +226,7 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O'
      boxes.children[6].innerText ='', boxes.children[6].style.backgroundColor = '';
      boxes.children[7].innerText ='', boxes.children[7].style.backgroundColor = '';
      boxes.children[8].innerText ='', boxes.children[8].style.backgroundColor = '';
-    //  var boxes = document.querySelector('.board')
+      counter = 0;
      
-    //   startGame(boxes)
-      
-      }
-     
-   
-       
+    }
+    
