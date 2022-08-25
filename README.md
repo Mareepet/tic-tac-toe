@@ -3,8 +3,8 @@
 ![alt text](https://timvandevall.com/wp-content/uploads/2014/01/Tic-Tac-Toe-Templates.jpg)
 
 ## :writing_hand: Planning 
-- :boom: Based on given scenario, I thought about 2 players participation, 9 winning combinations, draw/ tie situations, how each click should behave in-
-         -between players like odd and even clicks, display of result, game restart option etc.
+- :boom: Based on given scenario, I thought about 2 players participation, 8 winning combinations, draw/ tie situations, how each click should behave in-
+         between players like odd and even clicks, display of result, game restart option etc.
          
 ## :writing_hand: Problem Solving        
 - :boom: Understood concepts, but took some time and effort to understand how implement above mentioned planning components
