@@ -2,28 +2,34 @@
 ## :computer: [Click here](https://mareepet.github.io/tic-tac-toe/) to see my live project!
 ![alt text](https://timvandevall.com/wp-content/uploads/2014/01/Tic-Tac-Toe-Templates.jpg)
 
-## :writing_hand: Planning & Problem Solving 
-:boom: HTML & CSS basics for the game 
-:boom: Two opponents 
-:boom: Logic for the Winning and Loss
-:boom: Visually Display the Progress
-
+## :writing_hand: Planning 
+- :boom: Based on given scenario, I thought 2 players participation, 9 winning combinations, draw/ tie situations, how each click should behave in-
+         -between players like odd and even clicks, display of result, game restart option etc.
+         
+## :writing_hand: Problem Solving        
+- :boom: Understood concepts, but took some time and effort to understand how implement above mentioned planning components
+- :boom: Used HTML & CSS for the Tic Toc table
+- :boom: Created two opponents in javascript 
+- :boom: Wrote winning and losing logic for all conditions used by Javascript
+- :boom: created minions visual effects
+- :boom: worked on visual display using HTML Animation
 
 ## :rocket: Cool tech
-- Programming languages
-- Libraries
-- Animations
-- Anything else you'd be proud to show your parents
+- :boom: Java Script 
+- :boom: HTML  
+- :boom: CSS
+- :boom: gif
+- :boom: HTML animation
 
 ## :scream: Bugs to fix :poop:
-- Anything a little broken
-- Anything a LOT broken
-- Buttons to not click too many times (cause its broken :unamused:)
 
-## Lessons learnt
+- :boom: Restart section bug fixed
+- :boom: Fixed double click
 
+## Lessons learnt 
+:face_with_head_bandage: Understood that logic, planning and implementation should go hand in hand
 
 ![alt text](https://industryforum.co.uk/wp-content/uploads/sites/6/2015/09/Seek-capture-act-upon.jpg)
 
 ## :white_check_mark: Future features
-Cool things I would add if I can keep working on this
+:boom: Any add on features that makes the game visually and user friendly can be added
