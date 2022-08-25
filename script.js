@@ -18,8 +18,8 @@
     var boxes = document.querySelector('.board')
     // var boxes = document.querySelector('.c1')
     // for (let i=0; i< cell.length; i++) {
-    var cell = document.querySelectorAll('.cell')
-    console.log(cell)
+    // var cell = document.querySelectorAll('.cell')
+    // console.log(cell)
     
     // function startGame() {
     boxes.addEventListener('click',function(event) { 
@@ -205,7 +205,7 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O'
     
 }
      // in here if condition for tie
-    if (result.textContent != "Player-O Won"&&result.textContent != "Player-X Won"&&counter==9) {
+    if (result.textContent != "Player-O Won" && result.textContent != "Player-X Won" && counter === 9) {
        result.textContent = "OhOO! IT'S A TIE "
        gameOver.style.display ='flex' 
     //    if(boxes.children.innerText==='string'){
