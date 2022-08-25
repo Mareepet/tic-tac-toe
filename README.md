@@ -8,7 +8,7 @@
          
 ## :writing_hand: Problem Solving        
 - :boom: Understood concepts, but took some time and effort to understand how to implement above mentioned planning components
-- :boom: Used HTML & CSS for the Tic Toc table
+- :boom: Used HTML & CSS for the Tic Toc Toe table
 - :boom: Created two opponents in javascript 
 - :boom: Wrote winning and losing logic for all conditions used by Javascript
 - :boom: Created minions visual effects
