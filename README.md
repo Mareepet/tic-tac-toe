@@ -11,8 +11,8 @@
 - :boom: Used HTML & CSS for the Tic Toc table
 - :boom: Created two opponents in javascript 
 - :boom: Wrote winning and losing logic for all conditions used by Javascript
-- :boom: created minions visual effects
-- :boom: worked on visual display using HTML Animation
+- :boom: Created minions visual effects
+- :boom: Worked on visual display using HTML Animation
 
 ## :rocket: Cool tech
 - :boom: Java Script 
