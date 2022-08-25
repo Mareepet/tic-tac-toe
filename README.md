@@ -12,7 +12,7 @@
 - :boom: Created two opponents in javascript 
 - :boom: Wrote winning and losing logic for all conditions used by Javascript
 - :boom: Created minions visual effects
-- :boom: Worked on visual display using HTML Animation
+- :boom: Worked on visual display using CSS Animation
 
 ## :rocket: Cool tech
 - :boom: Java Script 
