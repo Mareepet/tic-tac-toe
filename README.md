@@ -19,7 +19,7 @@
 - :boom: HTML  
 - :boom: CSS
 - :boom: gif
-- :boom: HTML animation
+- :boom: CSS animation
 
 ## :scream: Bugs to fix :poop:
 
