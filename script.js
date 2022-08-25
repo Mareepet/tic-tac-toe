@@ -1,25 +1,33 @@
 
+
+   
+
+
     var gameOver = document.querySelector('.game-End')  
     var reset = document.querySelector('.reset')
     var result = document.querySelector('.result')
     var players = ['X','O']
     var counter = 0;
+    
 //    var points = 0;
 
-    // reset.addEventListener('click',resetGame);  
-   
+     reset.addEventListener('click',resetGame);  
+    //   reset = false;
+    // function startGame(boxes) {
     var boxes = document.querySelector('.board')
     // var boxes = document.querySelector('.c1')
     // for (let i=0; i< cell.length; i++) {
     var cell = document.querySelectorAll('.cell')
     console.log(cell)
-
+    // function startGame(boxes) {
+       
     boxes.addEventListener('click',function(event) { 
     // if (boxes.children.innerText != '')return;
     let box = event.target 
     // if (boxes.children.innerText != '')return;
+    
     if (box.tagName === "DIV") {
-
+    if (box.innerText != '')return;
     if (counter % 2 === 0) {
         // console.log(players[0])
         box.textContent = players[0]
@@ -32,8 +40,9 @@
     } // box.style.backgroundColor = 'red' ;
     }
 
-
+    
  // if condition for winning declaration
+ 
 
 if ( boxes.children[0].innerText === 'X' &&  boxes.children[1].innerText === 'X' &&  boxes.children[2].innerText === 'X' ) {
     // for( let i = 0; i < boxes.children.length; i++ ) {
@@ -199,10 +208,26 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O'
        result.textContent = "OhOO! IT'S A TIE "
        gameOver.style.display ='flex' 
     }   
-
-     
-
-
+    
 } ) 
+    // }
+    // startGame() ;   
+     function resetGame() {   
+     gameOver.style.display = "";
+     boxes.children[0].innerText ='', boxes.children[0].style.backgroundColor = '';
+     boxes.children[1].innerText ='', boxes.children[1].style.backgroundColor = '';
+     boxes.children[2].innerText ='', boxes.children[2].style.backgroundColor = '';
+     boxes.children[3].innerText ='', boxes.children[3].style.backgroundColor = '';
+     boxes.children[4].innerText ='', boxes.children[4].style.backgroundColor = '';
+     boxes.children[5].innerText ='', boxes.children[5].style.backgroundColor = '';
+     boxes.children[6].innerText ='', boxes.children[6].style.backgroundColor = '';
+     boxes.children[7].innerText ='', boxes.children[7].style.backgroundColor = '';
+     boxes.children[8].innerText ='', boxes.children[8].style.backgroundColor = '';
+    //  var boxes = document.querySelector('.board')
+     
+    //   startGame(boxes)
+      
+      }
+     
    
        
