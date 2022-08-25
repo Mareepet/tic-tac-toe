@@ -23,7 +23,7 @@
 
 ## :scream: Bugs to fix :poop:
 
-- :boom: Restart section bug fixed
+### - :boom: Restart section bug fixed
 - :boom: Fixed double click
 
 ## Lessons learnt 
