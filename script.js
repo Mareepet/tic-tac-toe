@@ -205,7 +205,7 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O'
     
 }
      // in here if condition for tie
-    if (counter == 9) {
+    if (result.textContent != "Player-O Won"&&result.textContent != "Player-X Won"&&counter==9) {
        result.textContent = "OhOO! IT'S A TIE "
        gameOver.style.display ='flex' 
     //    if(boxes.children.innerText==='string'){
