@@ -23,8 +23,8 @@
 
 ## :scream: Bugs to fix :poop:
 
-# - :boom: ~~Restart section bug fixed~~
-# - :boom:  ~~Fixed double click~~
+ - :boom: ~~Restart section bug fixed~~
+ - :boom:  ~~Fixed double click~~
 
 ## Lessons learnt 
 :face_with_head_bandage: Understood that logic, planning and implementation should go hand in hand
