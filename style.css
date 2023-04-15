@@ -1,130 +1,195 @@
-body {
-    background-image: url(https://c.tenor.com/Zy5Bhi7P63sAAAAC/oooh-aaah.gif);
+
+ body {
+     background-image: url(https://c.tenor.com/Zy5Bhi7P63sAAAAC/oooh-aaah.gif);
     /* background-color: rgb(52, 79, 127); */
-    height: 100%;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.title {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 25px;
-    color: orangered;
-    font: bold 52px Helvetica, Arial, Sans-Serif;
-    text-shadow: 2px 2px 3px black, 
+     height: 100%;
+ }
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ .title {
+     margin: 0 auto;
+     text-align: center;
+     font-size: 25px;
+     color: orangered;
+     font: bold 52px Helvetica, Arial, Sans-Serif;
+     text-shadow: 2px 2px 3px black, 
                 2px 2px 3px black;
-}
+ }
                    
-.board {
-      margin-top: -20px;
-        /* height: 100%; */
-        width: 100%;
-        display: grid; 
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: repeat(3, auto)
+ .board {
+     margin-top: -20px;
+     /* height: 100%; */
+     width: 100%;
+     display: grid; 
+     justify-content: center;
+     align-content: center;
+     justify-items: center;
+     align-items: center;
+     grid-template-columns: repeat(3, auto)
        
-    }
-    /* .img {
-       /* justify-content: center; */
-    /* margin-left: 25px; */
-      
-    /* }  */ 
-
-.cell {
+ }
     
-    border: 2px solid black;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    cursor: pointer;
-    background-color: rgb(213, 83, 18);
-        
+
+ .cell {
     
-}
+     border: 2px solid black;
+     width: 100px;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 50px;
+     cursor: pointer;
+     background-color: rgb(213, 83, 18);  
+ }
 
-/* .cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3) {
-    border-top: none;
-}
-.cell:nth-child(1), .cell:nth-child(4), .cell:nth-child(7) {
-    border-left: none;
-}
-.cell:nth-child(3), .cell:nth-child(6), .cell:nth-child(9) {
-    border-right: none;
-}
-.cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9) {
-    border-bottom: none;
-} */
-.game-End {
-    width: 40%;
-    height: 60vh;
-    margin-left: 30%; 
-    background: rgb(181, 212, 212,0.5);
-    position: fixed;
-    border-radius: 14px;
-    backdrop-filter: blur(.1rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
 
-}
-.reset {
-   /* margin-top: -10%; */
-    border: none;
-    font-size: 18px;
-    padding: 10px 14px;
-    border-radius: 6px;
-    font-weight: 200px;
-    background-color: rgb(213, 83, 18);
-    cursor: pointer;
-    transition: all 0.3s;
-     /* display: flex; */
-     /* margin-left: -21%;  */
-     /* margin-left: 47%; */
+ .game-End {
+     width: 40%;
+     height: 60vh;
+     margin-left: 30%; 
+     background: rgb(181, 212, 212,0.5);
+     position: fixed;
+     border-radius: 14px;
+     backdrop-filter: blur(.1rem);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     display: none;
 
-}
-.reset:hover {
- font-size: 20px;
-}
-.result {
-    padding: 50px;
-    font-size: 50px;
-    text-align: center;
-    animation: colorFade 10s infinite;
-    color: rgb(235, 124, 13);
-}
-@keyframes colorFade {
-    10% {
+ }
+ .reset {
+     /* margin-top: -10%; */
+     border: none;
+     font-size: 18px;
+     padding: 10px 14px;
+     border-radius: 6px;
+     font-weight: 200px;
+     background-color: rgb(213, 83, 18);
+     cursor: pointer;
+     transition: all 0.3s;
+     
+
+ }
+ .reset:hover {
+     font-size: 20px;
+ }
+ .result {
+     padding: 50px;
+     font-size: 50px;
+     text-align: center;
+     animation: colorFade 10s infinite;
+     color: rgb(235, 124, 13);
+ }
+ @keyframes colorFade {
+     10% {
         filter:  drop-shadow(6px 6px rgb(38, 217, 38));
         /* color: black; */
-    }20%{
+     }20%{
         filter:  drop-shadow(6px 6px 6px rgb(138, 6, 6));
         /* color: red; */
-    }
-    40%{
+     }
+     40%{
         filter:  drop-shadow(6px 6px 6px rgb(211, 211, 62));
         /* color:   yellow; */
-    }
-    60%{
+     }
+     60%{
         filter:  drop-shadow(6px 6px 6px purple);
         /* color: purple; */
-    }
-    80%{
+     }
+     80%{
         filter:  drop-shadow(6px 6px 6px rgb(33, 33, 192));
         /* color: red; */
     }
-    100%{
+     100%{
         filter:  drop-shadow(6px 6px 6px green);
         /* color: red; */
-    }
+     }
 
+ }
+/* For mobile devices with screens up to 767px wide */
+@media only screen and (max-width: 767px) {
+  body {
+    margin: 0 auto;
+}
+
+  .title {
+    font-size: 20px;
+  }
+  .board {
+    grid-template-columns: repeat(2);
+  }
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+  }
+  .game-End {
+    width: 80%;
+    height: 40vh;
+    margin-left: -1%;
+    margin-right: 1%;
+  }
+  .result {
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+
+/* For devices with screens between 768px and 1023px wide */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    margin: 0 auto;
+}
+  .title {
+    font-size: 30px;
+  }
+  .board {
+    grid-template-columns: repeat(2);
+  }
+  .cell {
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+  }
+  .game-End {
+    width: 70%;
+    height: 50vh;
+    margin-left: 15%;
+  }
+  .result {
+    font-size: 40px;
+    padding: 30px;
+  }
+}
+
+/* For devices with screens larger than 1023px wide */
+@media only screen and (min-width: 1024px) {
+  body {
+    margin: 0 auto;
+}
+
+  .title {
+    font-size: 35px;
+  }
+  .board {
+    grid-template-columns: repeat(3);
+  }
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+  .game-End {
+    width: 40%;
+    height: 60vh;
+    margin-left: 30%;
+  }
+  .result {
+    font-size: 50px;
+    padding: 50px;
+  }
 }

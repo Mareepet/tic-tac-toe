@@ -1,8 +1,5 @@
 
 
-   
-
-
     var gameOver = document.querySelector('.game-End')  
     var reset = document.querySelector('.reset')
     var result = document.querySelector('.result')
@@ -16,16 +13,11 @@
     // function startGame(boxes) {
         
     var boxes = document.querySelector('.board')
-    // var boxes = document.querySelector('.c1')
-    // for (let i=0; i< cell.length; i++) {
-    // var cell = document.querySelectorAll('.cell')
-    // console.log(cell)
     
-    // function startGame() {
     boxes.addEventListener('click',function(event) { 
-    // if (boxes.children.innerText != '')return;
+   
     let box = event.target 
-    // if (boxes.children.innerText != '')return;
+   
     
     if (box.tagName === "DIV") {
     if (box.innerText != '')return;
@@ -49,6 +41,7 @@ if ( boxes.children[0].innerText === 'X' &&  boxes.children[1].innerText === 'X'
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[0].style.backgroundColor = 'green' ;
+    console.log(boxes.children[0]+boxes.children[1]+boxes.children[2])
     boxes.children[1].style.backgroundColor = 'green' ;
     boxes.children[2].style.backgroundColor = 'green' ;
     result.textContent = "Player-X Won"
@@ -205,14 +198,17 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O'
     
 }
      // in here if condition for tie
-    if (result.textContent != "Player-O Won" && result.textContent != "Player-X Won" && counter === 9) {
-       result.textContent = "OhOO! IT'S A TIE "
-       gameOver.style.display ='flex' 
-    //    if(boxes.children.innerText==='string'){
-    //    resetGame();
-    //    }
-    }   
-    
+    // if (result.textContent != "Player-O Won" && result.textContent != "Player-X Won" && counter === 9) {
+    //    result.textContent = "OhOO! IT'S A TIE "
+    //    gameOver.style.display ='flex' 
+    // //    if(boxes.children.innerText==='string'){
+    // //    resetGame();
+    // //    }
+    // }   
+    if (counter === 9 && !gameOver.style.display) {
+      result.textContent = "OhOO! IT'S A TIE!"
+      gameOver.style.display ='flex'  
+  }
 } ) 
     
      function resetGame() {   
@@ -230,3 +226,5 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O'
      
     }
     
+
+
