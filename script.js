@@ -5,7 +5,8 @@
     var result = document.querySelector('.result')
     var players = ['X','O']
     var counter = 0;
-    
+    var playerXScore = 0;
+    var playerOScore = 0; 
 //    var points = 0;
 
      reset.addEventListener('click',resetGame);  
@@ -38,6 +39,7 @@
  
 
 if ( boxes.children[0].innerText === 'X' &&  boxes.children[1].innerText === 'X' &&  boxes.children[2].innerText === 'X' ) {
+  playerXScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[0].style.backgroundColor = 'green' ;
@@ -45,9 +47,11 @@ if ( boxes.children[0].innerText === 'X' &&  boxes.children[1].innerText === 'X'
     boxes.children[1].style.backgroundColor = 'green' ;
     boxes.children[2].style.backgroundColor = 'green' ;
     result.textContent = "Player-X Won"
-    gameOver.style.display ='flex'   
+    gameOver.style.display ='flex'
+    document.getElementById('playerXScore').textContent = playerXScore;   
 }
 if ( boxes.children[0].innerText === 'O' &&  boxes.children[1].innerText === 'O' &&  boxes.children[2].innerText === 'O' ) {
+  playerOScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[0].style.backgroundColor = 'green' ;
@@ -55,9 +59,11 @@ if ( boxes.children[0].innerText === 'O' &&  boxes.children[1].innerText === 'O'
     boxes.children[2].style.backgroundColor = 'green' ;
     result.textContent = "Player-O Won"
     gameOver.style.display ='flex' 
-    
+    document.getElementById('playerOScore').textContent = playerOScore; 
 }
 if ( boxes.children[3].innerText === 'X' &&  boxes.children[4].innerText === 'X' &&  boxes.children[5].innerText === 'X' ) {
+  playerXScore++;
+
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[3].style.backgroundColor = 'green' ;
@@ -65,9 +71,11 @@ if ( boxes.children[3].innerText === 'X' &&  boxes.children[4].innerText === 'X'
     boxes.children[5].style.backgroundColor = 'green' ;
     result.textContent = "Player-X Won"
     gameOver.style.display ='flex' 
-    
+    document.getElementById('playerXScore').textContent = playerXScore;
+
 }
 if ( boxes.children[3].innerText === 'O' &&  boxes.children[4].innerText === 'O' &&  boxes.children[5].innerText === 'O' ) {
+  playerOScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[3].style.backgroundColor = 'green' ;
@@ -75,9 +83,12 @@ if ( boxes.children[3].innerText === 'O' &&  boxes.children[4].innerText === 'O'
     boxes.children[5].style.backgroundColor = 'green' ;
     result.textContent = "Player-O Won"
     gameOver.style.display ='flex' 
+    document.getElementById('playerOScore').textContent = playerOScore; 
+
     
 }
 if ( boxes.children[6].innerText === 'X' &&  boxes.children[7].innerText === 'X' &&  boxes.children[8].innerText === 'X' ) {
+  playerXScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[6].style.backgroundColor = 'green' ;
@@ -85,9 +96,13 @@ if ( boxes.children[6].innerText === 'X' &&  boxes.children[7].innerText === 'X'
     boxes.children[8].style.backgroundColor = 'green' ;
     result.textContent = "Player-X Won"
     gameOver.style.display ='flex' 
+    document.getElementById('playerXScore').textContent = playerXScore;
+
     
 }
 if ( boxes.children[6].innerText === 'O' &&  boxes.children[7].innerText === 'O' &&  boxes.children[8].innerText === 'O' ) {
+  playerOScore++;
+
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[6].style.backgroundColor = 'green' ;
@@ -95,9 +110,12 @@ if ( boxes.children[6].innerText === 'O' &&  boxes.children[7].innerText === 'O'
     boxes.children[8].style.backgroundColor = 'green' ;
     result.textContent = "Player-O Won"
     gameOver.style.display ='flex' 
-    
+    document.getElementById('playerOScore').textContent = playerOScore; 
+
 }
 if ( boxes.children[0].innerText === 'X' &&  boxes.children[3].innerText === 'X' &&  boxes.children[6].innerText === 'X' ) {
+  playerXScore++;
+
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[0].style.backgroundColor = 'green' ;
@@ -105,9 +123,12 @@ if ( boxes.children[0].innerText === 'X' &&  boxes.children[3].innerText === 'X'
     boxes.children[6].style.backgroundColor = 'green' ;
     result.textContent = "Player-X Won"
     gameOver.style.display ='flex' 
+    document.getElementById('playerXScore').textContent = playerXScore;
+
     
 }
 if ( boxes.children[0].innerText === 'O' &&  boxes.children[3].innerText === 'O' &&  boxes.children[6].innerText === 'O' ) {
+  playerOScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[0].style.backgroundColor = 'green' ;
@@ -115,9 +136,10 @@ if ( boxes.children[0].innerText === 'O' &&  boxes.children[3].innerText === 'O'
     boxes.children[6].style.backgroundColor = 'green' ;
     result.textContent = "Player-O Won"
     gameOver.style.display ='flex' 
-    
+    document.getElementById('playerOScore').textContent = playerOScore; 
 }
 if ( boxes.children[1].innerText === 'X' &&  boxes.children[4].innerText === 'X' &&  boxes.children[7].innerText === 'X' ) {
+  playerXScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[1].style.backgroundColor = 'green' ;
@@ -125,9 +147,11 @@ if ( boxes.children[1].innerText === 'X' &&  boxes.children[4].innerText === 'X'
     boxes.children[7].style.backgroundColor = 'green' ;
     result.textContent = "Player-O Won"
     gameOver.style.display ='flex' 
-    
+    document.getElementById('playerXScore').textContent = playerXScore;
+
 }
 if ( boxes.children[1].innerText === 'O' &&  boxes.children[4].innerText === 'O' &&  boxes.children[7].innerText === 'O' ) {
+  playerOScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[1].style.backgroundColor = 'green' ;
@@ -135,9 +159,10 @@ if ( boxes.children[1].innerText === 'O' &&  boxes.children[4].innerText === 'O'
     boxes.children[7].style.backgroundColor = 'green' ;
     result.textContent = "Player-O Won"
     gameOver.style.display ='flex' 
-    
+    document.getElementById('playerOScore').textContent = playerOScore; 
 }
 if ( boxes.children[2].innerText === 'X' &&  boxes.children[5].innerText === 'X' &&  boxes.children[8].innerText === 'X' ) {
+  playerXScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[2].style.backgroundColor = 'green' ;
@@ -145,9 +170,11 @@ if ( boxes.children[2].innerText === 'X' &&  boxes.children[5].innerText === 'X'
     boxes.children[8].style.backgroundColor = 'green' ;
     result.textContent = "Player-X Won"
     gameOver.style.display ='flex' 
-    
+    document.getElementById('playerXScore').textContent = playerXScore;
+
 }
 if ( boxes.children[2].innerText === 'O' &&  boxes.children[5].innerText === 'O' &&  boxes.children[8].innerText === 'O' ) {
+  playerOScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[2].style.backgroundColor = 'green' ;
@@ -155,9 +182,12 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[5].innerText === 'O'
     boxes.children[8].style.backgroundColor = 'green' ;
     result.textContent = "Player-O Won"
     gameOver.style.display ='flex' 
+    document.getElementById('playerOScore').textContent = playerOScore; 
+
     
 }
-if ( boxes.children[0].innerText === 'X' &&  boxes.children[4].innerText === 'X' &&  boxes.children[8].innerText === 'X' ) {
+if ( boxes.children[0].innerText === 'X' &&  boxes.children[4].innerText === 'X' &&    boxes.children[8].innerText === 'X' ) {
+  playerXScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[0].style.backgroundColor = 'green' ;
@@ -165,9 +195,12 @@ if ( boxes.children[0].innerText === 'X' &&  boxes.children[4].innerText === 'X'
     boxes.children[8].style.backgroundColor = 'green' ;
     result.textContent = "Player-X Won"
     gameOver.style.display ='flex' 
-    
+    document.getElementById('playerXScore').textContent = playerXScore;
+
 }
 if ( boxes.children[0].innerText === 'O' &&  boxes.children[4].innerText === 'O' &&  boxes.children[8].innerText === 'O' ) {
+  playerOScore++;
+
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[0].style.backgroundColor = 'green' ;
@@ -175,9 +208,13 @@ if ( boxes.children[0].innerText === 'O' &&  boxes.children[4].innerText === 'O'
     boxes.children[8].style.backgroundColor = 'green' ;
     result.textContent = "Player-O Won"
     gameOver.style.display ='flex' 
+    document.getElementById('playerOScore').textContent = playerOScore; 
+
     
 }
 if ( boxes.children[2].innerText === 'X' &&  boxes.children[4].innerText === 'X' &&  boxes.children[6].innerText === 'X' ) {
+  playerXScore++;
+
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[2].style.backgroundColor = 'green' ;
@@ -185,9 +222,10 @@ if ( boxes.children[2].innerText === 'X' &&  boxes.children[4].innerText === 'X'
     boxes.children[6].style.backgroundColor = 'green' ;
     result.textContent = "Player-X Won"
     gameOver.style.display ='flex' 
-    
+    document.getElementById('playerXScore').textContent = playerXScore;
 }
 if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O' &&  boxes.children[6].innerText === 'O' ) {
+  playerOScore++;
     // for( let i = 0; i < boxes.children.length; i++ ) {
     //      boxes.children[i].style.backgroundColor = "green"
     boxes.children[2].style.backgroundColor = 'green' ;
@@ -195,6 +233,8 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O'
     boxes.children[6].style.backgroundColor = 'green' ;
     result.textContent = "Player-O Won"
     gameOver.style.display ='flex' 
+    document.getElementById('playerOScore').textContent = playerOScore; 
+
     
 }
      // in here if condition for tie
@@ -223,8 +263,31 @@ if ( boxes.children[2].innerText === 'O' &&  boxes.children[4].innerText === 'O'
      boxes.children[7].innerText ='', boxes.children[7].style.backgroundColor = '';
      boxes.children[8].innerText ='', boxes.children[8].style.backgroundColor = '';
       counter = 0;
-     
+      
     }
     
 
 
+    document.addEventListener("DOMContentLoaded", function() {
+      var audio = document.getElementById("background-audio");
+  
+      // Play the audio when the user interacts with the page (e.g., clicks a button)
+      document.addEventListener("click", function() {
+          audio.play()
+              .catch(error => {
+                  console.error("Audio play error:", error);
+              });
+  
+          document.removeEventListener("click", this);
+      });
+  
+      var volumeInput = document.getElementById("volume");
+  
+      // Set initial volume based on input value
+      audio.volume = volumeInput.value;
+  
+      // Update volume when input value changes
+      volumeInput.addEventListener("input", function() {
+          audio.volume = this.value;
+      });
+  });

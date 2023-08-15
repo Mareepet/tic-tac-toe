@@ -1,195 +1,233 @@
-
- body {
-     background-image: url(https://c.tenor.com/Zy5Bhi7P63sAAAAC/oooh-aaah.gif);
-    /* background-color: rgb(52, 79, 127); */
-     height: 100%;
- }
- *{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
- .title {
-     margin: 0 auto;
-     text-align: center;
-     font-size: 25px;
-     color: orangered;
-     font: bold 52px Helvetica, Arial, Sans-Serif;
-     text-shadow: 2px 2px 3px black, 
-                2px 2px 3px black;
- }
-                   
- .board {
-     margin-top: -20px;
-     /* height: 100%; */
-     width: 100%;
-     display: grid; 
-     justify-content: center;
-     align-content: center;
-     justify-items: center;
-     align-items: center;
-     grid-template-columns: repeat(3, auto)
-       
- }
-    
-
- .cell {
-    
-     border: 2px solid black;
-     width: 100px;
-     height: 100px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 50px;
-     cursor: pointer;
-     background-color: rgb(213, 83, 18);  
- }
-
-
- .game-End {
-     width: 40%;
-     height: 60vh;
-     margin-left: 30%; 
-     background: rgb(181, 212, 212,0.5);
-     position: fixed;
-     border-radius: 14px;
-     backdrop-filter: blur(.1rem);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     display: none;
-
- }
- .reset {
-     /* margin-top: -10%; */
-     border: none;
-     font-size: 18px;
-     padding: 10px 14px;
-     border-radius: 6px;
-     font-weight: 200px;
-     background-color: rgb(213, 83, 18);
-     cursor: pointer;
-     transition: all 0.3s;
-     
-
- }
- .reset:hover {
-     font-size: 20px;
- }
- .result {
-     padding: 50px;
-     font-size: 50px;
-     text-align: center;
-     animation: colorFade 10s infinite;
-     color: rgb(235, 124, 13);
- }
- @keyframes colorFade {
-     10% {
-        filter:  drop-shadow(6px 6px rgb(38, 217, 38));
-        /* color: black; */
-     }20%{
-        filter:  drop-shadow(6px 6px 6px rgb(138, 6, 6));
-        /* color: red; */
-     }
-     40%{
-        filter:  drop-shadow(6px 6px 6px rgb(211, 211, 62));
-        /* color:   yellow; */
-     }
-     60%{
-        filter:  drop-shadow(6px 6px 6px purple);
-        /* color: purple; */
-     }
-     80%{
-        filter:  drop-shadow(6px 6px 6px rgb(33, 33, 192));
-        /* color: red; */
-    }
-     100%{
-        filter:  drop-shadow(6px 6px 6px green);
-        /* color: red; */
-     }
-
- }
-/* For mobile devices with screens up to 767px wide */
-@media only screen and (max-width: 767px) {
-  body {
-    margin: 0 auto;
+body {
+  background-image: url(https://c.tenor.com/Zy5Bhi7P63sAAAAC/oooh-aaah.gif);
+  height: 100%;
+  margin: 0; /* Add margin to the body to center content horizontally */
+  font-family: Helvetica, Arial, Sans-Serif; /* Set default font family */
+  color: white; /* Set default text color */
 }
 
-  .title {
-    font-size: 20px;
-  }
-  .board {
-    grid-template-columns: repeat(2);
-  }
-  .cell {
-    width: 80px;
-    height: 80px;
-    font-size: 30px;
-  }
-  .game-End {
-    width: 80%;
-    height: 40vh;
-    margin-left: -1%;
-    margin-right: 1%;
-  }
-  .result {
-    font-size: 30px;
-    padding: 20px;
-  }
+.title {
+  margin: 20px auto; /* Add margin for spacing */
+  text-align: center;
+  font-size: 35px; /* Adjust font size */
+  color: orangered;
+  font-weight: bold; /* Use font-weight property */
+  text-shadow: 2px 2px 3px black, 2px 2px 3px black;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
 }
 
-/* For devices with screens between 768px and 1023px wide */
+.board {
+  margin-top: -20px;
+  /* height: 100%; */
+  width: 100%;
+  display: grid; 
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto)
+    
+}
+
+.cell {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+  background-color: rgb(213, 83, 18);
+}
+
+
+.game-End {
+  width: 40%;
+  height: 60vh;
+  margin-left: 30%; 
+  background: rgb(181, 212, 212,0.5);
+  position: fixed;
+  border-radius: 14px;
+  backdrop-filter: blur(.1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  margin-top: -10%;
+
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    margin: 0 auto;
-}
   .title {
-    font-size: 30px;
+      font-size: 30px;
   }
   .board {
-    grid-template-columns: repeat(2);
+      grid-template-columns: repeat(3); /* Use fractional units */
   }
   .cell {
-    width: 90px;
-    height: 90px;
-    font-size: 35px;
+      width: 90px;
+      height: 90px;
+      font-size: 35px;
   }
   .game-End {
-    width: 70%;
-    height: 50vh;
-    margin-left: 15%;
-  }
+    width: 40%; /* Adjust as needed */
+    max-width: 600px; /* Adjust as needed */
+    margin: 10% auto; /* Center horizontally and adjust vertical margin as needed */
+    margin-top: 5%; /* Adjust vertical margin for larger screens */
+   
+}
+}
   .result {
-    font-size: 40px;
-    padding: 30px;
+      font-size: 40px;
+      padding: 30px;
   }
+  .score-display {
+    width: 70%; /* Adjust the width for medium screens */
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+      font-size: 20px;
+  }
+  .board {
+      grid-template-columns: repeat(3); /* Use fractional units */
+  }
+  .cell {
+      width: 80px;
+      height: 80px;
+      font-size: 30px;
+  }
+  .game-End {
+    
+    width: 80%; /* Adjust as needed */
+    max-width: 90%; /* Adjust as needed */
+    height: 40vh;
+    margin-top: 20%;
+    margin-left: 40px; /* Adjust margin for spacing */
+    margin-right: 50px; /* Adjust margin for spacing */
+
+}
+  .result {
+      font-size: 30px;
+      padding: 20px;
+  }
+  .score-display {
+    width: 90%; /* Adjust the width for smaller screens */
+}
+
+.score {
+    font-size: 18px; /* Adjust font size for smaller screens */
+}
 }
 
 /* For devices with screens larger than 1023px wide */
 @media only screen and (min-width: 1024px) {
-  body {
-    margin: 0 auto;
-}
-
   .title {
-    font-size: 35px;
+      font-size: 35px;
   }
   .board {
-    grid-template-columns: repeat(3);
+      grid-template-columns: repeat(3); /* Use fractional units */
   }
   .cell {
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
+      width: 100px;
+      height: 100px;
+      font-size: 50px;
   }
   .game-End {
-    width: 40%;
-    height: 60vh;
-    margin-left: 30%;
+      width: 40%;
+      height: 60vh;
+      margin-left: 30%;
   }
   .result {
-    font-size: 50px;
-    padding: 50px;
+      font-size: 50px;
+      padding: 50px;
   }
+  .score-display {
+    width: 40%; /* Adjust the width for smaller screens */
+}
+
+.score {
+    font-size: 18px; /* Adjust font size for smaller screens */
+}
+}
+
+
+/* Center score display */
+.score-display {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(211, 95, 33, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.score {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+
+/* Add hover effect for reset button */
+.reset {
+    border: none;
+    font-size: 18px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: 200; /* Use font-weight property */
+    background-color: rgb(213, 83, 18);
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+.reset:hover {
+    font-size: 20px;
+}
+
+/* Add fade-in animation for result text */
+.result {
+    padding: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(235, 124, 13);
+    animation: colorFade 10s infinite;
+}
+
+
+@keyframes colorFade {
+  10% {
+    filter:  drop-shadow(6px 6px rgb(38, 217, 38));
+    /* color: black; */
+ }20%{
+    filter:  drop-shadow(6px 6px 6px rgb(138, 6, 6));
+    /* color: red; */
+ }
+ 40%{
+    filter:  drop-shadow(6px 6px 6px rgb(211, 211, 62));
+    /* color:   yellow; */
+ }
+ 60%{
+    filter:  drop-shadow(6px 6px 6px purple);
+    /* color: purple; */
+ }
+ 80%{
+    filter:  drop-shadow(6px 6px 6px rgb(33, 33, 192));
+    /* color: red; */
+}
+ 100%{
+    filter:  drop-shadow(6px 6px 6px green);
+    /* color: red; */
+ }
+
+
 }

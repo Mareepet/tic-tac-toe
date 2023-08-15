@@ -9,16 +9,33 @@
    <link rel="stylesheet" href="style.css"> 
  </head>
  <body>
+  <audio id="background-audio" autoplay loop>
+    <source src="Minion.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
    <main>
      <section class = "title">
        <h1>Tic Tac Toe</h1>
-       <img src="https://c.tenor.com/-eVad1_HFx0AAAAC/fangirls-funny.gif" alt="">
-     </section> 
+       <img src="https://c.tenor.com/-eVad1_HFx0AAAAC/fangirls-funny.gif" alt="" class="responsive-image">
+      </br>
+      </br>
+      </br>
+      <div class="score-display">
+        <div class="score scorex">X Score<br><span id="playerXScore">0</span> </div>
+        <Span><img src="https://bestanimations.com/media/speakers/660186343animated-speaker-2.gif" alt="Speaker" width="30" height="30" /><input id="volume" type="range" min="0" max="1" step="0.01" value="0.5"></span>
+       
+        <div class="score scoreo">O Score<br><span id="playerOScore">0</span></div>
+    
+      </div> 
+     </section>
+     
+    
      <section class="game-End">
          <h1 class="result"></h1>
          <button class="reset">Play Again</button>
      </section>
         <h1 class="result"></h1>
+      
      <section class="board">
          <div class="cell"></div>
          <div class="cell"></div>
@@ -30,10 +47,16 @@
          <div class="cell"></div>
          <div class="cell"></div>
      </section>
+
    </main>  
-     <script src="script.js"></script>
+
+
+    <script src="script.js"></script>
       
 </body>
 </html>
+
+
+
 
 
